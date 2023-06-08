@@ -22,6 +22,11 @@ day3: day3.c
 	@$(CC) $(CFLAGS) $^ -o $(BUILD)/$@
 	@$(BUILD)/$@
 
+day4: day4.c
+	@echo -e "[\e[1;32mbuild\e[0m]: $@"
+	@$(CC) $(CFLAGS) $^ -o $(BUILD)/$@ -lmd
+	@$(BUILD)/$@
+
 clean:
 	@echo -e "[\e[1;31mclean\e[0m]"
 	@rm -rf $(BUILD)
