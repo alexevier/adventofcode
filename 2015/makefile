@@ -5,7 +5,7 @@ BUILD = build
 default:
 	@echo -e "[\e[1;34mtargets\e[0m]"
 	@echo "clean | dirs"
-	@echo "day1 | day2"
+	@echo "day1 | day2 | day3 | day4 | day5"
 
 day1: day1.c
 	@echo -e "[\e[1;32mbuild\e[0m]: day1"
@@ -23,6 +23,11 @@ day3: day3.c
 	@$(BUILD)/$@
 
 day4: day4.c
+	@echo -e "[\e[1;32mbuild\e[0m]: $@"
+	@$(CC) $(CFLAGS) $^ -o $(BUILD)/$@ -lmd
+	@$(BUILD)/$@
+
+day5: day5.c
 	@echo -e "[\e[1;32mbuild\e[0m]: $@"
 	@$(CC) $(CFLAGS) $^ -o $(BUILD)/$@ -lmd
 	@$(BUILD)/$@
