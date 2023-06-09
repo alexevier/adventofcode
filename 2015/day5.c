@@ -19,9 +19,9 @@ static void vecChar2Push(struct VecChar2* vec, const struct Char2* char2);
 static long int vecChar2Find(const struct VecChar2* vec, const struct Char2* char2);
 
 int main(void){
-	FILE* file = fopen("day5input.txt", "r");
+	FILE* file = fopen("input/day5.txt", "r");
 	if(!file){
-		printf("[error]: failed to open \"day5input.txt\"\n");
+		printf("[error]: failed to open \"input/day5.txt\"\n");
 		return 1;
 	}
 	

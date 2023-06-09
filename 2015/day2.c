@@ -28,9 +28,9 @@ int main(void){
 	unsigned int totalWrap = 0;
 	unsigned int totalRibbon = 0;
 	unsigned int eof = 0;
-	FILE* file = fopen("day2input.txt", "r");
+	FILE* file = fopen("input/day2.txt", "r");
 	if(!file){
-		printf("[error]: failed to open \"day2input.txt\"\n");
+		printf("[error]: failed to open \"input/day2.txt\"\n");
 		return 1;
 	}
 	

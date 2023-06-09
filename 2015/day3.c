@@ -21,9 +21,9 @@ static long int vecInt2Find(const struct VecInt2* vec, const struct Int2* int2);
 int main(void){
 	struct VecInt2 vec = VECINT2_ZERO;
 	struct Int2 pos = {0, 0};
-	FILE* file = fopen("day3input.txt", "r");
+	FILE* file = fopen("input/day3.txt", "r");
 	if(!file){
-		printf("[error]: failed to open \"day3input.txt\"\n");
+		printf("[error]: failed to open \"input/day3.txt\"\n");
 		return 1;
 	}
 	
